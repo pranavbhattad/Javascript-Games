@@ -4,7 +4,7 @@
 This project can be the best Javascript Open Source Games.
 We have several popular games you can play and have fun with these games.
 
-You can report bugs by emailing me: **pranavlsb0@gmail.com**
+You can report bugs by emailing me: **pranavlsb0@gmail.com**<br>
 This is the URL of this gaming project: **http://bit.ly/javascriptgames**
 
 ## Support
