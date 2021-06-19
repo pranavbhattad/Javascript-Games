@@ -44,39 +44,39 @@ var jumpSound , checkPointSound, dieSound;
 function preload(){
   
 //   The Trex Or the Dinosaur
-  trex_running = loadAnimation("trex1.png","trex3.png","trex4.png");
-  trex_collided = loadAnimation("trex_collided.png");
+  trex_running = loadAnimation("img/trex1.png","img/trex3.png","img/trex4.png");
+  trex_collided = loadAnimation("img/trex_collided.png");
   
-  fontDino = loadFont ("Dino.ttf");
+  fontDino = loadFont ("fonts/Dino.ttf");
   
 
 //   The Ground
-  groundImage = loadImage("ground2.png");
+  groundImage = loadImage("img/ground2.png");
   
 
 // The Cloud
-  cloudImg = loadImage("cloud.png");
+  cloudImg = loadImage("img/cloud.png");
  
   
 // The Obstacles
   
-  obstacle_1 = loadImage("obstacle1.png");
-  obstacle_2 = loadImage("obstacle2.png");
-  obstacle_3 = loadImage("obstacle3.png");
-  obstacle_4 = loadImage("obstacle4.png");
-  obstacle_5 = loadImage("obstacle5.png");
-  obstacle_6 = loadImage("obstacle6.png");
+  obstacle_1 = loadImage("img/obstacle1.png");
+  obstacle_2 = loadImage("img/obstacle2.png");
+  obstacle_3 = loadImage("img/obstacle3.png");
+  obstacle_4 = loadImage("img/obstacle4.png");
+  obstacle_5 = loadImage("img/obstacle5.png");
+  obstacle_6 = loadImage("img/obstacle6.png");
  
   
 //  Game Over and Restart
-  gameOverImg = loadImage("gameOver.png");
-  restartImg = loadImage("restart.png");
+  gameOverImg = loadImage("img/gameOver.png");
+  restartImg = loadImage("img/restart.png");
 
   
 //  Loading the Sounds
-  jumpSound = loadSound("jump.mp3");
-  dieSound = loadSound("die.mp3");
-  checkPointSound = loadSound("checkPoint.mp3");
+  jumpSound = loadSound("sound/jump.mp3");
+  dieSound = loadSound("sound/die.mp3");
+  checkPointSound = loadSound("sound/checkPoint.mp3");
   
 }
 

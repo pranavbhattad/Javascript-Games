@@ -16,21 +16,21 @@ var score;
 
 
 function preload(){ 
-  backgroundImg = loadImage("background0.png");
+  backgroundImg = loadImage("img/background0.png");
   
-  blue_balloon_img = loadImage("blue_balloon0.png");
-  red_balloon_img = loadImage("red_balloon0.png");
-  bow_image = loadImage("bow0.png");
-  arrow_image = loadImage("arrow0.png");
-  green_balloon_img = loadImage("green_balloon0.png");
-  pink_balloon_img = loadImage("pink_balloon0.png");
+  blue_balloon_img = loadImage("img/blue_balloon0.png");
+  red_balloon_img = loadImage("img/red_balloon0.png");
+  bow_image = loadImage("img/bow0.png");
+  arrow_image = loadImage("img/arrow0.png");
+  green_balloon_img = loadImage("img/green_balloon0.png");
+  pink_balloon_img = loadImage("img/pink_balloon0.png");
 
 }
 
 
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(550, 550);
   
   //creating background
   background = createSprite(10, 0, 10, 10);
@@ -82,7 +82,6 @@ if (keyDown("z")) {
   //   Continous Balloons to burst
   
   var choose_balloon = Math.round(random(1,4));
-  console.log(choose_balloon);
   
   if(World.frameCount % 80 == 0){ 
     

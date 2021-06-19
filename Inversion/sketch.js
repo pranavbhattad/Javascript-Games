@@ -17,17 +17,17 @@ b4 = createSprite(200,200,10,10);
 
 
 // Giving Velocity or Movement to the object
-b1.velocityX = -2;
-b1.velocityY = -2;
+b1.velocityX = -3.5;
+b1.velocityY = -3.5;
 
-b2.velocityX = 2;
-b2.velocityY = -2;
+b2.velocityX = 3.5;
+b2.velocityY = -3.5;
 
-b3.velocityX = -2;
-b3.velocityY = 2;
+b3.velocityX = -3.5;
+b3.velocityY = 3.5;
 
-b4.velocityX = 2;
-b4.velocityY = 2;
+b4.velocityX = 3.5;
+b4.velocityY = 3.5;
 
 }
 

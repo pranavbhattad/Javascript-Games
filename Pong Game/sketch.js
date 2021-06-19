@@ -16,7 +16,7 @@ function setup() {
   let cnv = createCanvas(400,400)
   cnv.position(450, 100)
   ball = createSprite(200,200,10,10);
-  playerPaddle = createSprite(380,200,10,70)
+  playerPaddle = createSprite(390,200,10,70)
   computerPaddle = createSprite(10,200,10,70)
   compScore = 0;
   playerScore = 0;
@@ -25,17 +25,18 @@ function setup() {
 // Main Function
 
 function draw() {
-  background(30);
+  background(0);
   
   edges = createEdgeSprites()
 
   //place info text in the center
   if (gameState === "serve") {
+    fill(255, 255, 255);
     text("Press Space to Serve",150,180);
   }
    
   
-  playerPaddle.y = World.mouseY;
+  playerPaddle.y =  mouseY;
   
   //AI for the computer paddle
   //make it move with the ball's y position
@@ -43,6 +44,8 @@ function draw() {
   
   //draw line at the centre
   for (var i = 0; i < 400; i=i+20) {
+    stroke(255, 255, 255)
+    fill(255, 255, 255)
     line(200,i,200,i+10);
   }
   
@@ -72,12 +75,15 @@ function draw() {
 if (ball.isTouching(edges[1])) {
     compScore = compScore + 1;
   }
- 
-  
   
   text(compScore, 180, 15);
   text(playerScore, 220, 15);
   
+// Colours
+  ball.shapeColor = "white";
+  playerPaddle.shapeColor = "white";
+  computerPaddle.shapeColor = "white";
+
   drawSprites();
 }
 

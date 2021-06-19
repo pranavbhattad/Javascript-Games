@@ -6,16 +6,14 @@ var invisibleBlockGroup, invisibleBlock;
 var gameState = "play"
 
 function preload(){
-  towerImg = loadImage("tower.png");
-  doorImg = loadImage("door.png");
-  climberImg = loadImage("climber.png");
-  ghostImg = loadImage("ghost-standing.png");
-  spookySound = loadSound("spooky.wav");
+  towerImg = loadImage("img/tower.png");
+  doorImg = loadImage("img/door.png");
+  climberImg = loadImage("img/climber.png");
+  ghostImg = loadImage("img/ghost-standing.png");
 }
 
 function setup(){
   createCanvas(600,600);
-  spookySound.loop();
   tower = createSprite(300,300);
   tower.addImage("tower",towerImg);
   tower.velocityY = 1;

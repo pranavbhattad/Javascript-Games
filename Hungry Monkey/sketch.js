@@ -7,18 +7,18 @@ var backImg, backgr
 
 
 function preload(){
-  backImg = loadImage("jungle.jpg")
+  backImg = loadImage("img/jungle.jpg")
   
-  monkey_running = loadAnimation("Monkey_01.png","Monkey_02.png","Monkey_03.png","Monkey_04.png","Monkey_05.png","Monkey_06.png","Monkey_07.png","Monkey_08.png","Monkey_09.png","Monkey_10.png");
-  bananaImage = loadImage("banana.png");
-  obstacleImage = loadImage("obstacle.png");
+  monkey_running = loadAnimation("img/Monkey_01.png","img/Monkey_02.png","img/Monkey_03.png","img/Monkey_04.png","img/Monkey_05.png","img/Monkey_06.png","img/Monkey_07.png","img/Monkey_08.png","img/Monkey_09.png","img/Monkey_10.png");
+  bananaImage = loadImage("img/banana.png");
+  obstacleImage = loadImage("img/obstacle.png");
 
 }
 
 
 
 function setup() {
-createCanvas(800, 400)
+cnv = createCanvas(800, 400)
 
 // Background
 backgr=createSprite(0,0);

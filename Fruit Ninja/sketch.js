@@ -10,20 +10,19 @@ var apple, banana, orange, pear, fruitGroup, fruit;
 
 
 function preload(){
+    
+    swordImage = loadImage("img/sword.png");
+    monsterImg = loadAnimation("img/alien1.png", "img/alien2.png");
 
-    swordImage = loadImage("sword.png");
-    monsterImg = loadAnimation("alien1.png", "alien2.png");
+    apple = loadImage("img/apple.png");
+    banana = loadImage("img/banana.png");
+    orange = loadImage("img/orange.png");
+    pear = loadImage("img/pear.png");
 
-    apple = loadImage("apple.png");
-    banana = loadImage("banana.png");
-    orange = loadImage("orange.png");
-    pear = loadImage("pear.png");
+    gameOverImage = loadImage("img/gameover.png");
 
-    gameOverImage = loadImage("gameover.png");
-  
-    knifeSwooshSound = loadSound("knifeSwooshSound.mp3")
-    gameOverSound = loadSound("gameover.mp3")
-
+    knifeSwooshSound = loadSound("sound/knife.mp3")
+    gameOverSound = loadSound("sound/gameover.mp3")
 }
 
 
